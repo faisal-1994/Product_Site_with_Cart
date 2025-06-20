@@ -1,0 +1,210 @@
+ 
+   a{
+    text-decoration: none;
+    color: white;
+   }
+
+   body{
+    background-color: whitesmoke; /* Bootstrap dark gray */
+    
+   }
+   
+   /* Cart styles */
+    #cartHolder {
+      padding: 10px 10px 30px 10px;
+      height: 300px;
+      max-height: 300px;
+      overflow-y: auto;
+      margin-top: 5px;
+      background-color: #8b2020;
+      margin-bottom: 5px;
+      border: 3px solid black;
+      position: fixed;
+      right: 125px;
+      top: 60px;
+      visibility: hidden;
+      z-index: 1000;
+      width: 320px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .cartItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      background: #fff8f8;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .cartImg {
+      flex-shrink: 0;
+      width: 50px;
+    }
+
+    .cartImg img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .cartImgName {
+      margin-top: 5px;
+      font-weight: 600;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .commonP {
+      margin: 0 10px;
+      min-width: 20px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .pmCart button {
+      margin-left: 3px;
+      margin-right: 3px;
+      padding: 0 6px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: #d9534f;
+      color: white;
+      border-radius: 3px;
+      transition: background-color 0.2s;
+    }
+
+    .pmCart button:hover {
+      background-color: #c9302c;
+    }
+
+    .removeItem {
+      cursor: pointer;
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+      user-select: none;
+    }
+
+    /* Product card */
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      text-align: center;
+      user-select: none;
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 150px;
+      /* height: auto; */
+      max-height: 70px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    .pnDiv {
+      margin-bottom: 10px;
+    }
+
+    .pnResult {
+      min-width: 25px;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 18px;
+      user-select: none;
+    }
+
+    button.pb,
+    button.nb,
+    button.addCart,
+    button.buyCart {
+      cursor: pointer;
+      margin: 0 5px;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: white;
+      font-weight: 600;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+
+    button.pb:hover,
+    button.nb:hover,
+    button.addCart:hover,
+    button.buyCart:hover {
+      background-color: #0056b3;
+    }
+
+    button.addCart {
+      background-color: #28a745;
+    }
+
+    button.addCart:hover {
+      background-color: #1e7e34;
+    }
+
+    /* Footer */
+    footer.footer {
+      background-color: #222;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 14px;
+      position: relative;
+      margin-top: 40px;
+      user-select: none;
+    }
+
+    /* Scrollbar for cart */
+    #cartHolder::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    #cartHolder::-webkit-scrollbar-thumb {
+      background-color: #a83232;
+      border-radius: 10px;
+    }
+
+    .paging{
+      background-color: transparent;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 14px;
+      position: relative;
+      top: 0px;
+      margin-top: 40px;
+      user-select: none;
+    }
+    .paging a{
+     
+      background-color: rgb(12, 161, 219);
+      color: white;
+     
+    }
+
+    /* //css for mode// */
+
+    body.dark-mode {
+  background-color: #343a40 !important;
+  color: #fff !important;
+}
+
+body.dark-mode .navbar {
+  background-color: skyblue !important;
+}
+
+body.dark-mode .btn {
+  color: black !important;
+  border-color: #fff !important;
+}

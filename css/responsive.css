@@ -1,0 +1,91 @@
+@media (min-width: 200px) and (max-width: 250px){
+    
+} 
+
+
+
+
+
+                                                /*!  */    /*!  */    /*!  */
+
+
+@media (min-width: 251px) and (max-width: 337px){
+
+  #cartHolder {
+        position: fixed;
+        right: 5px;
+
+        width: 100%;
+     
+    }
+
+}
+
+
+
+
+
+
+@media (min-width: 338px) and (max-width: 575px){
+      #cartHolder {
+        right: 0;
+
+        width: 100%;
+     
+    }
+
+    .productName, .productPrice{
+        margin: 0;
+        margin-bottom: 2px;
+    }
+
+    button.pb, button.nb, button.addCart, button.buyCart {
+
+        padding:3px 5px 3px 5px;
+        font-size: 13px;
+
+}
+
+
+
+
+
+
+/*  */
+
+                                             /*!  */  /*!  */  /*!  */
+@media (min-width: 576px) and (max-width: 767px){
+
+      #cartHolder {
+       
+        right: 0;
+
+        width: 100%;
+     
+    }
+
+}
+
+
+                                                /*!  */  /*!  */  /*!  */
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+
+}                                              /*!  */  /*!  */  /*!  */
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+
+}
+
+                                              /*!  */  /*!  */  /*!  */
+
+@media (min-width: 1200px) and (max-width:1399px){
+
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> b61e355 (add mode option , paging option and other adjustment)
