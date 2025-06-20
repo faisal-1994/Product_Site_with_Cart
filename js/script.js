@@ -246,22 +246,20 @@ Total Price: ${totalPrice.toFixed(2)}/=
 
   // page highlighted
 
-  document.addEventListener("DOMContentLoaded", () => {
-  // Get current page file name
-  let currentPage = window.location.pathname.split("/").pop();
-  if (currentPage === "") currentPage = "index.html"; // default page
+document.querySelectorAll(".paging a").forEach(link => {
+  const href = link.getAttribute("href");
+  const path = window.location.pathname;
 
-  // Select all pagination links
-  const pageLinks = document.querySelectorAll(".paging a");
+  // Normalize paths, remove leading slash from path for easier comparison
+  const currentPage = path.startsWith('/') ? path.slice(1) : path;
 
-  pageLinks.forEach(link => {
-    // Get href file name
-    let linkPage = link.getAttribute("href").split("/").pop();
-
-    // Compare current page with link href
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    }
-  });
+  // Handle root (empty string) or index.html for first page
+  if ((currentPage === "" || currentPage === "index.html") && (href === "index.html" || href === "./index.html" || href === "/index.html")) {
+    link.classList.add("active");
+  } else if (currentPage === href || currentPage === href.replace('./', '')) {
+    link.classList.add("active");
+  }
 });
+
+
 
