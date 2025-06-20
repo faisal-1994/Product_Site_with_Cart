@@ -223,3 +223,45 @@ Total Price: ${totalPrice.toFixed(2)}/=
       ? "☀️ Light"
       : "🌙 Dark";
   })
+
+
+  // search
+
+
+  document.getElementById("searchInput").addEventListener("input", function () {
+    const searchValue = this.value.toLowerCase().trim();
+    const productCols = document.querySelectorAll(".product");
+
+    productCols.forEach(product => {
+      const name = product.querySelector(".productName")?.textContent.toLowerCase() || "";
+      const price = product.querySelector(".productPrice")?.textContent.toLowerCase() || "";
+
+      const isMatch = name.includes(searchValue) || price.includes(searchValue);
+
+      // Show/hide the entire grid item
+      const column = product.closest(".col-6, .col-md-6, .col-lg-3, .col-xl-3");
+      if (column) column.style.display = isMatch ? "block" : "none";
+    });
+  });
+
+  // page highlighted
+
+  document.addEventListener("DOMContentLoaded", () => {
+  // Get current page file name
+  let currentPage = window.location.pathname.split("/").pop();
+  if (currentPage === "") currentPage = "index.html"; // default page
+
+  // Select all pagination links
+  const pageLinks = document.querySelectorAll(".paging a");
+
+  pageLinks.forEach(link => {
+    // Get href file name
+    let linkPage = link.getAttribute("href").split("/").pop();
+
+    // Compare current page with link href
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});
+

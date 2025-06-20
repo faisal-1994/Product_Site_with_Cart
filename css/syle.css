@@ -5,7 +5,7 @@
    }
 
    body{
-    background-color: whitesmoke; /* Bootstrap dark gray */
+    background-color: whitesmoke; 
     
    }
    
@@ -16,7 +16,7 @@
       max-height: 80vh; /* Set maximum height to 80% of screen */
       overflow-y: auto;
       margin-top: 5px;
-      background-color: #8b2020;
+       background-color: #8b2020; 
       margin-bottom: 5px;
       border: 3px solid black;
       position: fixed;
@@ -34,7 +34,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 10px;
-      background: #4888a1;
+      background: #3d748a;
       padding: 5px;
       border-radius: 5px;
       font-size: 14px;
@@ -192,6 +192,24 @@
       color: white;
      
     }
+
+    /* Normal pagination button */
+.paging a {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  margin: 0 5px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Active/current page button style */
+.paging a.active {
+  background-color: #e5fd0d; /* Bootstrap primary blue */
+  color: rgb(22, 21, 21) !important;
+  font-weight: bold;
+  pointer-events: none; /* optional: disable click on current page */
+}
 
     /* //css for mode// */
 
