@@ -17,17 +17,28 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-info mb-4">
             <div class="container">
-            <a class="navbar-brand" href="#">My Shop</a>
-            <button
-                class="btn btn-outline-light ms-auto"
-                id="cartBtn"
-                title="Toggle Cart"
-                aria-label="Toggle Cart"
-            >
-                🛒 Cart
-            </button>
+                <a class="navbar-brand" href="#">My Shop</a>
+                <div class="ms-auto d-flex gap-2">
+                <button
+                    class="btn btn-outline-light"
+                    id="cartBtn"
+                    title="Toggle Cart"
+                    aria-label="Toggle Cart"
+                >
+                    🛒 Cart
+                </button>
+
+                <button
+                    class="btn btn-outline-light"
+                    id="toggleModeBtn"
+                    title="Toggle Dark Mode"
+                >
+                    🌙 Dark
+                </button>
+                </div>
             </div>
         </nav>
+
 
         <div id="cartHolder" class="cartHolder">
             <p class="text-center text-light fs-5 mb-3">Cart Products</p>
@@ -50,7 +61,7 @@
 
                     <!-- Example product item structure -->
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                     <div class="product" data-price="550">
                     <img src="./images/img1.png" alt="image1" />
                     <p class="productName">image1</p>
@@ -65,7 +76,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                     <div class="product" data-price="350">
                     <img src="./images/img2.png" alt="image2" />
                     <p class="productName">image2</p>
@@ -80,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="50">
                     <img src="./images/img3.png" alt="image3" />
                     <p class="productName">image3</p>
@@ -95,7 +106,7 @@
                 </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="300">
                     <img src="./images/img4.png" alt="image4" />
                     <p class="productName">image4</p>
@@ -110,7 +121,7 @@
                 </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="400">
                     <img src="./images/img5.png" alt="image5" />
                     <p class="productName">image5</p>
@@ -125,7 +136,7 @@
                 </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="450">
                     <img src="./images/img6.png" alt="image6" />
                     <p class="productName">image6</p>
@@ -140,7 +151,7 @@
                 </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="100">
                     <img src="./images/img7.png" alt="image7" />
                     <p class="productName">image7</p>
@@ -155,7 +166,7 @@
                 </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="200">
                     <img src="./images/img8.png" alt="image8" />
                     <p class="productName">image8</p>
@@ -170,7 +181,7 @@
                 </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="400">
                     <img src="./images/img9.png" alt="image9" />
                     <p class="productName">image9</p>
@@ -185,7 +196,7 @@
                 </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="450">
                     <img src="./images/img10.png" alt="image10" />
                     <p class="productName">image10</p>
@@ -200,7 +211,7 @@
                 </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="100">
                     <img src="./images/img11.png" alt="image11" />
                     <p class="productName">image11</p>
@@ -215,7 +226,7 @@
                 </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
                 <div class="product" data-price="200">
                     <img src="./images/img12.png" alt="image12" />
                     <p class="productName">image12</p>
@@ -235,7 +246,7 @@
             
         </main>
 
-       <div class="paging">
+        <div class="paging">
             <a class="btn btn-primary" href="./index.html">1</a>
             <a class="btn btn-primary" href="./product.html">2</a>
             <a class="btn btn-primary" href="./product2.html">3</a>

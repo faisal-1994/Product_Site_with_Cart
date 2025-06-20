@@ -12,8 +12,8 @@
    /* Cart styles */
     #cartHolder {
       padding: 10px 10px 30px 10px;
-      height: 300px;
-      max-height: 300px;
+      min-height: 300px;
+      max-height: 80vh; /* Set maximum height to 80% of screen */
       overflow-y: auto;
       margin-top: 5px;
       background-color: #8b2020;
@@ -24,7 +24,7 @@
       top: 60px;
       visibility: hidden;
       z-index: 1000;
-      width: 320px;
+      width: 400px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
@@ -34,7 +34,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 10px;
-      background: #fff8f8;
+      background: #4888a1;
       padding: 5px;
       border-radius: 5px;
       font-size: 14px;
