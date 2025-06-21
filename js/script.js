@@ -190,17 +190,20 @@ Total: ${total}/=
         };
 
         message = `🛒 Cart Order
-Name: ${user.name}
-Address: ${user.address}
-Phone: ${user.phone}
-Cart Items:
-${message}
-Total Price: ${totalPrice.toFixed(2)}/=
-📩 Sent on: ${new Date().toLocaleString()}`;
+                    Name: ${user.name}
+                    Address: ${user.address}
+                    Phone: ${user.phone}
+                    Cart Items:
+                    ${message}
+                    Total Price: ${totalPrice.toFixed(2)}/=
+                    📩 Sent on: ${new Date().toLocaleString()}`;
 
-        emailjs
-          .send("service_sf01pgf", "template_wnbbw2k", {
+       emailjs.send("service_sf01pgf", "template_wnbbw2k", {
+            buyer_name: user.name,
+            buyer_address: user.address,
+            buyer_phone: user.phone,
             cart_details: message,
+            date: new Date().toLocaleString()
           })
           .then(() => {
             alert("✅ Cart sent to your email!");
